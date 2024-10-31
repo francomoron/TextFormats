@@ -129,12 +129,12 @@ En este caso, esta utilizando:
 # 3.  COMPLETAR LA TABLA.
 ---
 
- -----------------------------
-| FANSI.txt   | TAM. EN BYTES |
-| ----------- | ------------- | 
-| FANSI.txt   | 147 BYTES     |
-| FUTF16L.txt | 294 BYTES     |
-| FUTF16B.txt | 294 BYTES     |
-| FUTF8.txt   | 149 BYTES     |
- -----------------------------
+ -------------------------------
+| NOMBRE ARCHIVO | TAM. EN BYTES |
+| -------------- | ------------- | 
+| FANSI.txt      | 147 BYTES     |
+| FUTF16L.txt    | 294 BYTES     |
+| FUTF16B.txt    | 294 BYTES     |
+| FUTF8.txt      | 149 BYTES     |
+ -------------------------------
 
