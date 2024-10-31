@@ -1,5 +1,7 @@
 # AL FINALIZAR LA GUIA, DEBERIAS TENER LOS MISMOS ARCHIVOS CONTENIDOS EN ESTE REPOSITORIO
 
+
+
 # 1.  CREACION DE DIRECTORIO Y ARCHIVO BASE.
 ---
 ##  Nos ubicamos en el directorio donde queremos trabajar.
