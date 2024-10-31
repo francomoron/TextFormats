@@ -1,3 +1,5 @@
+# ==AL FINALIZAR LA GUIA, DEBERIAS TENER LOS MISMOS ARCHIVOS CONTENIDOS EN ESTE REPOSITORIO==
+
 # 1.  CREACION DE DIRECTORIO Y ARCHIVO BASE.
 ---
 ##  Nos ubicamos en el directorio donde queremos trabajar.
@@ -72,7 +74,7 @@ Ahora solo falta reemplazar al archivo "replica.txt" por "cp850.txt"
 
 
 # 2.  CREACION DE DIFERENTES CODIFICACIONES.
-
+---
 *  FANSI.txt (FORMATO ANSI)
 Suponemos que se refiere a la siguiente tabla: 
 >> https://www.medcalc.org/manual/ansi-character-set.php
@@ -123,7 +125,7 @@ En este caso, esta utilizando:
 
 
 # 3.  COMPLETAR LA TABLA.
-
+---
 | FANSI.txt   | 147 | BYTES |
 | ----------- | --- | ----- |
 | FUTF16L.txt | 294 | BYTES |
