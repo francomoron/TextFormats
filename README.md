@@ -3,7 +3,7 @@
 
 
 # 1.  CREACION DE DIRECTORIO Y ARCHIVO BASE.
----
+
 ##  Nos ubicamos en el directorio donde queremos trabajar.
 
 ```bash
@@ -76,7 +76,7 @@ mv cp850.txt replica.txt
 
 
 # 2.  CREACION DE DIFERENTES CODIFICACIONES.
----
+
 *  FANSI.txt (FORMATO ANSI)
 Suponemos que se refiere a la siguiente tabla: 
 >> https://www.medcalc.org/manual/ansi-character-set.php
@@ -127,7 +127,6 @@ En este caso, esta utilizando:
 
 
 # 3.  COMPLETAR LA TABLA.
----
 
  -------------------------------
 | NOMBRE ARCHIVO | TAM. EN BYTES |
