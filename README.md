@@ -7,26 +7,26 @@
 ##  Nos ubicamos en el directorio donde queremos trabajar.
 
 ```bash
-	cd ~/Desktop
+cd ~/Desktop
 ```
 	
 ## Creamos el directorio de trabajo.
 
 ```bash
-	mkdir TextFormats
+mkdir TextFormats
 ```
 
 ## Nos Ubicamos en el directorio que creamos.
 
 ```bash
-	cd TextFormats
+cd TextFormats
 ```
 
 ## Creamos el archivo "replica.txt" y lo rellenamos con el contenido que deseamos:
 
 Creamos el archivo replica.txt.
 ```bash
-	touch replica.txt
+touch replica.txt
 ```
 
 Rellenamos el archivo replica.txt con el siguiente contenido:
@@ -36,9 +36,9 @@ Esta maquina posee seis diales de giratorios divididos cada 36. Es una antigüed
 
 Si ejecutamos los comandos:
 ```bash
-	ls -lh replica.txt
-	file replica.txt
-	xxd replica.txt
+ls -lh replica.txt
+file replica.txt
+xxd replica.txt
 ```
 Nos daremos cuenta que el archivo:
 * Tiene tamaño 149 bytes.
@@ -53,14 +53,14 @@ Referencia de Code Page 850:
 
 Agregamos el caracter CR:
 ```bash
-	unix2dos replica.txt
+unix2dos replica.txt
 ```
 Referencia comando unix2dos:
 >> https://linux.die.net/man/1/unix2dos
 
 Codificamos el texto en EASCII Code Page 850.
 ```bash
-	iconv -f UTF-8 -t CP850//TRANSLIT replica.txt > cp850.txt
+iconv -f UTF-8 -t CP850//TRANSLIT replica.txt > cp850.txt
 ```
 Referencia comando iconv:
 >> https://linux.die.net/man/1/iconv
@@ -68,10 +68,10 @@ Referencia comando iconv:
 Y solucionado ! 
 Ahora solo falta reemplazar al archivo "replica.txt" por "cp850.txt"
 ```bash
-	rm replica.txt
+rm replica.txt
 ```
 ```bash
-	mv cp850.txt replica.txt
+mv cp850.txt replica.txt
 ```
 
 
@@ -84,7 +84,7 @@ Suponemos que se refiere a la siguiente tabla:
 ANSI es una codificación de un solo byte utilizada en sistemas Windows para idiomas europeos occidentales.
 
 ```bash
-	iconv -f CP850 -t WINDOWS-1252 replica.txt > FANSI.txt
+iconv -f CP850 -t WINDOWS-1252 replica.txt > FANSI.txt
 ```
 
 Si realizamos un diff o un xxd de ambos archivos, podemos notar que, aunque ambos archivos tengan el mismo tamaño, Se cambio:
@@ -95,7 +95,7 @@ Si realizamos un diff o un xxd de ambos archivos, podemos notar que, aunque ambo
 Suponemos que se refiere a UNICODE representado en little endian (ya que posee una L al final)
 
 ```bash
-	iconv -f CP850 -t UTF-16LE replica.txt > FUTF16L.txt
+iconv -f CP850 -t UTF-16LE replica.txt > FUTF16L.txt
 ```
 
 Notemos que el tamaño del archivo se duplico ya que generalmente se utilizan dos bytes para representar a un caracter. Little Endian representa el byte menos significativo primero y luego el byte mas representativo (Big Endian hace lo contrario).
@@ -103,7 +103,7 @@ Notemos que el tamaño del archivo se duplico ya que generalmente se utilizan do
 * FUTF16B.txt (FORMATO UNICODE BIG ENDIAN)
 
 ```bash
-	iconv -f CP850 -t UTF-16BE replica.txt > FUTF16B.txt
+iconv -f CP850 -t UTF-16BE replica.txt > FUTF16B.txt
 ```
 
 Notemos que el tamaño del archivo es el mismo que Little Endian pero si hacemos un diff o xxd de ambos archivos, podemos visualizar como cambio el orden de los bytes.
@@ -114,7 +114,7 @@ Referencia de BIG ENDIAN y LITTLE ENDIAN
 * FUTF8.txt (FORMATO UTF-8)
 
 ```bash
-	iconv -f CP850 -t UTF-8 replica.txt -o FUTF8.txt
+iconv -f CP850 -t UTF-8 replica.txt -o FUTF8.txt
 ```
 
 Si realizamos un diff o un xxd a ambos archivos, podemos notar que UTF-8 tiene 2 bytes que el archivo "replica.txt" que esta codificado con EASCII Code Page 850.
