@@ -1,7 +1,3 @@
-# AL FINALIZAR LA GUIA, DEBERIAS TENER LOS MISMOS ARCHIVOS CONTENIDOS EN ESTE REPOSITORIO
-
-
-
 # 1.  CREACION DE DIRECTORIO Y ARCHIVO BASE.
 
 ##  Nos ubicamos en el directorio donde queremos trabajar.
@@ -152,8 +148,3 @@ En este caso, esta utilizando:
 | ¡        | A1       | 1          | 00A1       | 2            | A100       | 2            | C2A1     | 2          |
 | á        | E1       | 1          | 00E1       | 2            | E100       | 2            | C3A1     | 2          |
 | ü        | FC       | 1          | 00FC       | 2            | FC00       | 2            | C3BC     | 2          |
-
-
-
-
-
